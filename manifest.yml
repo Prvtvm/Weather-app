@@ -1,0 +1,9 @@
+applications:
+  - name: weather-app
+    memory: 512M
+    buildpacks:
+      - nodejs_buildpack
+    routes:
+      - route: weather-app-route.cfapps.eu20.hana.ondemand.com	
+    env:
+      NODE_ENV: production
